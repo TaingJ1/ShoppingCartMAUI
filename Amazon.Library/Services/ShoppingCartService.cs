@@ -44,11 +44,6 @@ namespace Amazon.Library.Services
             }
         }
 
-        //public ShoppingCart AddOrUpdate(ShoppingCart c)
-        //{
-        //    //TODO: Someone do this.
-        //}
-
         public void AddToCart(Product newProduct)
         {
             if(Cart == null || Cart.Contents == null)

@@ -77,5 +77,19 @@ namespace Amazon.Library.Services
                 return instance;
             }
         }
+
+        public void Delete(int id)
+        {
+            if (products == null)
+            {
+                return;
+            }
+            var productToDelete = products.FirstOrDefault(c => c.Id == id);
+
+            if (productToDelete != null)
+            {
+                products.Remove(productToDelete);
+            }
+        }
     }
 }

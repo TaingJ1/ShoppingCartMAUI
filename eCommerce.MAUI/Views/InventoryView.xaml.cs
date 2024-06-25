@@ -19,6 +19,10 @@ public partial class InventoryView : ContentPage
     {
         Shell.Current.GoToAsync("//Product");
     }
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        (BindingContext as InventoryViewModel).Refresh();
+    }
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
